@@ -6,7 +6,7 @@ var success = 0; //命中率
 var knock = 0; //鼠标点中老鼠图片次数
 var countDown = 30; //倒计时
 var interId = null, // 指定setInterval()的变量
-    timeId = null; //指定setTimeout()的变量
+    timeId = null; //指定setTimeout()的变量，NULL是什么变量？？？？？？
 
 // 游戏结束
 function GameOver(){
@@ -23,11 +23,12 @@ function GameOver(){
 
 //显示当前倒计时所剩时间
 function timeShow(){
+    //指定方式需要熟悉！！！！！！？？？？
     document.form1.remtime.value = countDown;
     if(countDown == 0)
         {
             GameOver();
-            return;
+            return;//return个啥？？？？？？
         }
     else
         {
