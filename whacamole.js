@@ -24,7 +24,7 @@ function show(){
         var current = Math.floor(Math.random()*25);
         //设置格子随机，图片随机
         document.getElementById("td["+current+"]").innerHTML = '<img src="img/mouse.png">';
-        //每三秒出现一次什么东西？？？？？？？？？？？？？？？？？
+        //删除内容，设置 innerHTML 的值可以让你轻松地将当前元素的内容替换为新的内容↓
         setTimeout("document.getElementById('td["+current+"]').innerHTML=''",3000);
         //为什么不是getElementById("td[current]")???????
     }
